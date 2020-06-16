@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<title>Login</title>
+<script src="https:////code.jquery.com/jquery-1.10.2.min.js"></script>
+<script
+	src="https:////maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<style>
+*{
+            margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif; 
+        }
+.navbar{
+background-color:#0A3D62;
+}
+.btn-social{
+color:#ffffff;
+display:inline-block;
+margin-right:10px;
+margin-bottom:10px;
+}
+.btn-facebook{
+background:#30336B;
+}
+.btn-google{
+background:#BA2F16;
+}
+.btn-facebook:hover{
+background:#3d5785;
+color:#ffffff;
+}
+.btn-google:hover{
+background:#bf3b31;
+color:#ffffff;
+}
+</style>
+</head>
+<body>
+<section>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	<a class="navbar-brand" style="color: #ffffff; font-size: 25px; font-weight: bold" href="HomePage.html">Tour Guide</a>
+	</div>
+	</div>
+</nav>
+</section>
+<section>
+<div class="container">
+<h1 class="text-center text-capitalize pt-5">User Login</h1>
+<hr class="w-25 mx-auto pt-5">
+</div>
+
+<div class="jumbotron w-50 mx-auto mb-5">
+<form action="connectLogin.jsp" method="post">
+<div class="form-group">
+<label for="email" >Email</label>
+<input type="email" name="email" placeholder="Enter email" class="form-control">
+</div>
+<div class="form-group">
+<label for="password" >Password</label>
+<input type="password" name="password" placeholder="Enter password" class="form-control">
+</div>
+<div class="form-group form-check">
+<label for="form-check-label">
+<input class="form-check-input" type="checkbox">Remember me
+</label>
+</div>
+<button type="submit" class="btn btn-info" data-toggle="modal" data-target="login-modal">Login</button>
+<div class="mb-2 text-center">
+<div class="mb-3 "><h5>Or login with</h5></div>
+<a href="https://www.facebook.com/" class="btn btn-social btn-facebook mx-3">facebook</a>
+<a href="https://accounts.google.com/ServiceLogin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail&sacu=1&passive=1209600&hl=en-GB&acui=0&rrsp=1&flowName=GlifWebSignIn&flowEntry=AddSession&cid=1&TL=AM3QAYbwHs7wdCm8nsL9zba8v0H_LJtoSpFvE-o7s2T8Oxj31l4w6wfzmJV7Sk2C" class="btn btn-social btn-google mx-3">google</a>
+</div>
+
+<div class="pt-3">
+<h5>Don't have an account? <a href="Register.html">Register</a> here</h5>
+</div>
+</form>
+</div>
+</section>
+<section>
+    <footer class="text-center text-white bg-dark">
+      <p>@copyright TourGuide.com/2020</p>
+    </footer>
+</section>
+</body>
+</html>

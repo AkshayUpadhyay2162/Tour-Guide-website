@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+.text1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2{
+    font-size: 30px;
+    }
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
