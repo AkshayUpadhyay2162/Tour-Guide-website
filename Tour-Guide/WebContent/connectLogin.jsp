@@ -52,21 +52,47 @@ try{
 		<option value="Mumbai">Mumbai</option>
 		<option value="Kolkata">Kolkata</option>
 		</select>
-		<button class="btn btn-primary mb-3">Find</button>
+		<button class="btn btn-primary mb-3 w-25">Get location</button><br>
+		<label forName = "Start" name="Start">Start:</label>
+		<select class="w-25 mb-3" name="city" id="city">
+		<option value="Gwalior">Gwalior</option>
+		<option value="Bhopal">Bhopal</option>
+		<option value="Delhi">Delhi</option>
+		<option value="Mumbai">Mumbai</option>
+		<option value="Kolkata">Kolkata</option>
+		</select>
+		<label forName = "waypoints" name="waypoints">Waypoints::</label>
+		<input type="text" name="waypoints" placeholder="Enter waypoints:">
+		<label forName = "End" name="End">End:</label>
+		<select class="w-25 mb-3" name="city" id="city">
+		<option value="Gwalior">Gwalior</option>
+		<option value="Bhopal">Bhopal</option>
+		<option value="Delhi">Delhi</option>
+		<option value="Mumbai">Mumbai</option>
+		<option value="Kolkata">Kolkata</option>
+		</select>
+		<button class="btn btn-primary mb-3">Load map</button>
 		<div id="map"></div>
 		</div>
 		<script>
-		function initMap(){
-		var location = {lat: 26.152300, lng: 78.781303};
-		var map = new google.maps.Map(document.getElementById("map"),{
-			zoom: 4,
-			center: location 
-			});
-		var marker = new google.maps.Marker({
-			position: location,
-			map: map
-		});
+		
+		function initMap() {
+			var location = {lat: 26.152300, lng: 78.781303};
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+				    zoom: 4,
+				    center: location
+				  });
+				  
+		    var marker = new google.maps.Marker({
+					  position: location,
+					  map: map
+					});
+
+				
 		}
+		
+		
 		</script>
 		  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHWdd1OvZ5YcZ0hiTGmyPAMqtbfP1bI_M&callback=initMap"
   type="text/javascript"></script>
