@@ -44,35 +44,32 @@ try{
 	rs.next();
 	if(rs.getString("password").equals(password) && rs.getString("email").equals(email)){
 		%>
-		<div class="container-fluid my-5">
-		<select class="w-25 mb-3" name="city" id="city">
-		<option value="Gwalior">Gwalior</option>
-		<option value="Bhopal">Bhopal</option>
-		<option value="Delhi">Delhi</option>
-		<option value="Mumbai">Mumbai</option>
-		<option value="Kolkata">Kolkata</option>
-		</select>
-		<button class="btn btn-primary mb-3 w-25">Get location</button><br>
-		<label forName = "Start" name="Start">Start:</label>
-		<select class="w-25 mb-3" name="city" id="city">
-		<option value="Gwalior">Gwalior</option>
-		<option value="Bhopal">Bhopal</option>
-		<option value="Delhi">Delhi</option>
-		<option value="Mumbai">Mumbai</option>
-		<option value="Kolkata">Kolkata</option>
-		</select>
-		<label forName = "waypoints" name="waypoints">Waypoints::</label>
-		<input type="text" name="waypoints" placeholder="Enter waypoints:">
-		<label forName = "End" name="End">End:</label>
-		<select class="w-25 mb-3" name="city" id="city">
-		<option value="Gwalior">Gwalior</option>
-		<option value="Bhopal">Bhopal</option>
-		<option value="Delhi">Delhi</option>
-		<option value="Mumbai">Mumbai</option>
-		<option value="Kolkata">Kolkata</option>
-		</select>
-		<button class="btn btn-primary mb-3">Load map</button>
-		<div id="map"></div>
+		<div class="container content-div">
+			<div class="row">
+				<div class="form-group">
+					<div class="col-md-4">
+						<select class="form-control input-md" id="city" name="city">
+						<option value="Gwalior">Gwalior</option>
+						<option value="Delhi">Delhi</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+					<button class="btn btn-primary" id="submit" name="submit">Get location</button>
+					</div>	
+				</div>
+			</div>
+			<div class="row" style = "padding:20px;"></div>
+			<div class="row">
+				<div id="right-panel">
+					<div class="col-md-3">
+					<b>Start:</b>
+					<select class="form-control input-md" id="start"></select>
+					</div>
+					<div class="col-md-4">
+					<b>Waypoints:</b>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script>
 		
