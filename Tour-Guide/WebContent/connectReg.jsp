@@ -13,21 +13,33 @@
 *{
             margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif; 
         }
-.navbar{
-background-color:#0A3D62;
-}
+
 </style>
 </head>
 <body>
-<section>
-<nav class="navbar navbar-default">
-	<div class="container-fluid">
-	<div class="navbar-header">
-	<a class="navbar-brand" style="color: #ffffff; font-size: 25px; font-weight: bold" href="HomePage.html">Tour Guide</a>
-	</div>
-	</div>
-</nav>
-</section>
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container-fluid">
+			
+			<a class="navbar-brand" style="font-size: 25px; font-weight: bold" href="HomePage.html">Tour Guide</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fas fa-bars ml-1"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav text-uppercase ml-auto">
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="HomePage.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#aboutus">About</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+				</ul>
+				<a type="button" class="btn btn-outline-primary my-2 ml-2 mr-3" href="Login.html">Login</a>
+				<a type="button" class="btn btn-outline-primary my-2" href="Register.html">Sign Up</a>
+			</div>
+			</div>
+		</nav>
+		</section>
 <%
 String firstname = request.getParameter("firstname");
 String lastname = request.getParameter("lastname");
@@ -43,20 +55,19 @@ try{
 	ps.setString(4, password);
 	int x = ps.executeUpdate();
 	if(x>0){ %>
-	<div class="jumbotron w-75 pt-5 mx-auto mt-5">
-		<h1 class="text-center mt-3 mb-3">Registration Done</h1>
-		<hr class="w-50 mx-auto pt-5">
-		<h5 class="text-capitalize mx-auto text-center">Go to <a href="Login.html"> login page</a></h5> 
-		</div>
-		<%
+	<script>
+		alert("Registration done");
+	</script>
+<div class="jumbotron w-50 mx-auto" style="margin-top: 100px;">
+	<a href="Login.html" class="mx-auto p-5">Go to login page</a>
+</div>
+<%
 }
 	else {
 		%>
-		<div class="jumbotron w-75 pt-5 mx-auto mt-5">
-		<h1 class="text-center mt-3 mb-3">Registration Failed</h1>
-		<hr class="w-50 mx-auto pt-5">
-		<h5 class="text-capitalize mx-auto text-center"><a href="Register.html">Register again</a></h5>
-	</div>
+		<script>
+			alert("Registration failed")
+		</script>
 	<% 
 	}
 }

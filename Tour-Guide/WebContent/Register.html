@@ -4,14 +4,15 @@
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Registration</title>
-<script src="https:////code.jquery.com/jquery-1.10.2.min.js"></script>
-<script
-	src="https:////maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <style>
 *{
             margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif; 
         }
+/* body{
+	background-image: url(img/tg2.jpg);
+} */
 .navbar{
 background-color:#0A3D62;
 }
@@ -39,16 +40,30 @@ color:#ffffff;
 </head>
 <body>
 <section>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 	<div class="container-fluid">
-	<div class="navbar-header">
+	
 	<a class="navbar-brand" style="color: #ffffff; font-size: 25px; font-weight: bold" href="HomePage.html">Tour Guide</a>
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		Menu
+		<i class="fas fa-bars ml-1"></i>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav text-uppercase ml-auto">
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="HomePage.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+		</ul>
+		<a type="button" class="btn btn-outline-primary my-2 ml-2 mr-3" href="Login.html">Login</a>
+		<a type="button" class="btn btn-outline-primary my-2" href="Register.html">Sign Up</a>
 	</div>
 	</div>
 </nav>
 </section>
 <section>
-<div class="container">
+<div class="container mt-5">
 <h1 class="text-center text-capitalize pt-5">User registration</h1>
 <hr class="w-25 mx-auto pt-5">
 </div>
@@ -56,21 +71,56 @@ color:#ffffff;
 <div class="jumbotron w-50 mx-auto mb-5">
 <form action="connectReg.jsp" method="post">
 <div class="form-group">
-<label for="firstname" >First Name</label>
-<input type="text" id="firstname" name="firstname" placeholder="Enter first name" class="form-control">
+	<label for="firstname" >First Name</label>
+	<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+		<div class="input-group">
+			<input type="text" id="firstname" name="firstname" placeholder="Enter first name" class="form-control">
+			<div class="input-group-append">
+			<span class="input-group-text"><i class="fa fa-user"></i></span>
+		</div>
+	</div>
+	</div>
+	</div>
 </div>
 <div class="form-group">
-<label for="lastname" >Last Name</label>
-<input type="text" id="lastname" name="lastname" placeholder="Enter last name" class="form-control">
-</div>
+	<label for="lastname" >Last Name</label>
+	<div class="row">
+		
+		<div class="col-lg-12 col-md-12 col-sm-12">
+		<div class="input-group">
+			<input type="text" id="lastname" name="lastname" placeholder="Enter last name" class="form-control">
+			<div class="input-group-append">
+			<span class="input-group-text"><i class="fa fa-user"></i></span>
+		</div>
+	</div>
+	</div>
+	</div></div>
 <div class="form-group">
-<label for="email" >Email</label>
-<input type="email" id="email" name="email" placeholder="Enter email" class="form-control">
-</div>
+	<label for="email" >Email</label>
+	<div class="row">
+	
+		<div class="col-lg-12 col-md-12 col-sm-12">
+		<div class="input-group">
+			<input type="email" id="email" name="email" placeholder="Enter email" class="form-control">
+			<div class="input-group-append">
+			<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+		</div>
+	</div>
+	</div>
+	</div></div>
 <div class="form-group">
-<label for="password" >Password</label>
-<input type="password" id="password" name="password" placeholder="Enter password" class="form-control">
-</div>
+	<label for="password" >Password</label>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+		<div class="input-group">
+			<input type="password" id="passowrd" name="password" placeholder="Enter password" class="form-control">
+			<div class="input-group-append">
+			<span class="input-group-text"><i class="fa fa-lock"></i></span>
+		</div>
+	</div>
+	</div>
+	</div></div>
 <div class="form-group form-check">
 <label for="form-check-label">
 <input class="form-check-input" type="checkbox">Remember me
@@ -93,6 +143,9 @@ color:#ffffff;
       <p>@copyright TourGuide.com/2020</p>
     </footer>
 </section>
+<script src="https:////code.jquery.com/jquery-1.10.2.min.js"></script>
+<script
+	src="https:////maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
