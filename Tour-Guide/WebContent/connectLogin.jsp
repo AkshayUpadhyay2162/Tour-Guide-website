@@ -143,17 +143,6 @@ try{
 		</form>
 		</div>
 		<div id="map" class="mb-5"></div>
-		<script>
-
-			if(navigator.geolocation)	
-				navigator.geolocation.getCurrentPosition(function(position){
-				console.log(position);
-			});
-			else
-				console.log("geolocation not supported");
-	
-
-		</script>
 		  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrta6YIpc31dsbeuDDmG4obUw1XNW_8d8&callback=initMap"
   type="text/javascript"></script>
 	<% 

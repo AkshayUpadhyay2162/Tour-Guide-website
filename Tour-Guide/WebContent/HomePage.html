@@ -1,116 +1,149 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<link rel="icon" type="image/x-icon" href="img/tour-guide.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-<title>Tour Guide</title>
-<style type="text/css">
-*{
-            margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif; 
-        }
-/* body{
+	<meta charset="ISO-8859-1">
+	<link rel="icon" type="image/x-icon" href="img/tour-guide.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<title>Tour Guide</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		/* body{
 	background-image: url(img/tg3.jpg);
 } */
-/* .navbar{
+		/* .navbar{
 background-color:#0A3D62;
 } */
-</style>
+		.masthead {
+			position: relative;
+			width: 100%;
+			min-height: 50rem;
+			padding: 15rem 0;
+			/* background-attachment: fixed; */
+			background-size: cover;
+			animation: animate 16s ease-in-out infinite;
+		}
+
+		.outer {
+			background: rgba(0, 0, 0, 0.5);
+		}
+
+		@keyframes animate {
+
+			0%,
+			100% {
+				background-image: url(img/tg1.jpg);
+			}
+
+			25% {
+				background-image: url(img/tg2.jpg);
+			}
+
+			50% {
+				background-image: url(img/tg3.jpg);
+			}
+
+			75% {
+				background-image: url(img/tg4.jpg);
+			}
+		}
+
+		#title {
+			font-size: 90px;
+		}
+
+		#para {
+			font-size: 30px;
+			font-style: oblique;
+		}
+	</style>
 
 </head>
+
 <body>
-<section id="home">
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-	<div class="container-fluid">
-	
-	<a class="navbar-brand" style="color: #ffffff; font-size: 25px; font-weight: bold" href="HomePage.html">Tour Guide</a>
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-		Menu
-		<i class="fas fa-bars ml-1"></i>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav text-uppercase ml-auto">
-			<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#home">Home</a></li>
-			<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#portfolio">Portfolio</a></li>
-			<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#aboutus">About</a></li>
-			<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#team">Team</a></li>
-			<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#contact">Contact</a></li>
-		</ul>
-		<a type="button" class="btn btn-outline-primary my-2 ml-2 mr-3" href="Login.html">Login</a>
-		<a type="button" class="btn btn-outline-primary my-2" href="Register.html">Sign Up</a>
-	</div>
-	</div>
-</nav>
-</section>
-<section>
-		<div id="myslides" class="carousel slide carousel-fade" data-ride="carousel">
-			<ul class="carousel-indicators">
-				<li data-target="#myslides" data-slide-to="0" class="active"></li>
-				<li data-target="#myslides" data-slide-to="1"></li>
-				<li data-target="#myslides" data-slide-to="2"></li>
-			</ul>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="img/tg2.jpg" alt="TourGuide" class="d-block w-100" style="width: 750px; height: 800px;">
-				<div class="carousel-caption" style="margin-bottom:300px;">
-					<h1 style="font-size: 90px;">Welcome to Tour Guide</h1>
-				    <p style="font-size: 25px; font-style: oblique;">We will help you to reach your destination</p>
-					<a type="button" class="btn btn-dark text-capitalize mx-auto" href="Login.html">Find your destination</a>
+	<section id="home">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container-fluid">
+
+				<a class="navbar-brand" style="color: #ffffff; font-size: 25px; font-weight: bold"
+					href="HomePage.html">Tour Guide</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+					data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+					aria-label="Toggle navigation">
+					Menu
+					<i class="fas fa-bars ml-1"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav text-uppercase ml-auto">
+						<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger text-white"
+								href="#portfolio">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#aboutus">About</a>
+						</li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#team">Team</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger text-white"
+								href="#contact">Contact</a></li>
+					</ul>
+					<a type="button" class="btn btn-outline-primary my-2 ml-2 mr-3" href="Login.html">Login</a>
+					<a type="button" class="btn btn-outline-primary my-2" href="Register.html">Sign Up</a>
 				</div>
-				</div>
-				<div class="carousel-item">
-					<img src="img/tg3.jpg" alt="TourGuide" class="d-block w-100" style="width: 750px; height: 800px;">
-					<div class="carousel-caption" style="margin-bottom:300px;">
-						<h1 style="font-size: 90px;">Welcome to Tour Guide</h1>
-						<p style="font-size: 25px; font-style: oblique;">We will help you to reach your destination</p>	
-						<a type="button" class="btn btn-dark text-capitalize mx-auto" href="Login.html">Find your destination</a>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="img/tg1.jpg" alt="TourGuide" class="d-block w-100" style="width: 750px; height: 800px;">
-					<div class="carousel-caption" style="margin-bottom:300px;">
-						<h1 style="font-size: 90px;">Welcome to Tour Guide</h1>
-						<p style="font-size: 25px; font-style: oblique;">We will help you to reach your destination</p>
-						<a type="button" class="btn btn-dark text-capitalize mx-auto" href="Login.html">Find your destination</a>
-					</div>
-				</div>
-				<a href="#myslides" class="carousel-control-prev" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a href="#myslides" class="carousel-control-next" role="button" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-					<span class="sr-only">Next</span>
-				</a>
 			</div>
-			
+		</nav>
+	</section>
+	<section>
+		<header class="masthead">
+			<div class="container d-flex h-100 align-items-center">
+				<div class="mx-auto text-center">
+					<h1 id="title" class="mx-auto my-0 text-white">Welcome to tour guide</h1>
+					<p id="para" class="text-white">We will help you to reach at your destination.</p>
+					<a id="volunteer" class="btn btn-dark js-scroll-trigger mt-5" href="Login.html">Find your
+						destination</a>
+				</div>
+			</div>
+		</header>
+
+	</section>
+	<section class="page-section" id="aboutus">
+		<div class="container-fluid">
+			<h1 class="text-center text-capitalize pt-5">About Us</h1>
+			<hr class="w-25 mx-auto pt-5">
+			<div class="row mb-5">
+				<div class="col-lg-6 col-md-6 col-12">
+					<h1>About Tour Guide</h1>
+					<hr>
+					<p style="font-size: 20px;">Tour guide helps you to reach your destination. Tour guide is a
+						plateform where you can find the routes between any two places in any city and in any country.
+						Here you can also find the various famous tourist and historical places in any city.
+						There's no better way to feel the heart beat of a city than discovering it with a knowledgeable
+						local by your side who has similar interests to yours. Whether you want the focus of your visit
+						to be on art, food, nightlife, sightseeing, or culture, now you can customize a city tour with
+						Tour Guide wherever your next destination might be.
+					</p>
+					<button class="btn bg-success text-white">More</button>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<img src="img/tg3.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
 		</div>
-	
-</section>
-<section class="page-section" id="aboutus">
-	<div class="container-fluid">
-		<h1 class="text-center text-capitalize pt-5">About Us</h1>
-		<hr class="w-25 mx-auto pt-5">
-	<div class="row mb-5">
-		<div class="col-lg-6 col-md-6 col-12">
-		<h1>About Tour Guide</h1>
-		<hr>
-		<p style="font-size: 20px;">Tour guide helps you to reach your destination. Tour guide is a plateform where you can find the routes between any two places in any city and in any country. 
-			Here you can also find the various famous tourist and historical places in any city. 
-			There's no better way to feel the heart beat of a city than discovering it with a knowledgeable local by your side who has similar interests to yours. Whether you want the focus of your visit to be on art, food, nightlife, sightseeing, or culture, now you can customize a city tour with Tour Guide wherever your next destination might be.
-</p>	
-			<button class="btn bg-success text-white">More</button>
-		</div>
-		<div class="col-lg-6 col-md-6 col-12">
-		<img src="img/tg3.jpg" alt="" class="img-fluid">
-		</div>
-	</div>
-</div>
-</section>
+	</section>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+	crossorigin="anonymous"></script>
+
 </html>
